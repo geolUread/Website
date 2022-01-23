@@ -1,0 +1,41 @@
+{
+    "educationList":
+    [
+        {
+            "schoolName": "East Stroudsburg Univeristy",
+            "degree" : "B.S. Math & Computer Science",
+            "time" : "May 2021"
+        }
+    ],
+
+    "listAward": 
+    [
+        { "awardName" :  "Clear Path Scholarship Recipient"},
+        { "awardName" : "Montefiore Scholarship Recipient"}, 
+        { "awardName" : "AT&T Stem Scholarship Recipient"}, 
+        { "awardName" : "East Stroudsburg Univeristy Computer Science Endowed Scholarship Recipient"}
+    ],
+
+  
+    "listOfExperience":
+    [
+        {
+            "role": "Front-End Web Developer",
+            "company": "Deloitte - FDA - Mercado", 
+            "timeThere": "September 2021 - Present"
+        }, 
+
+        {
+            "role": "Data Analyst",
+            "company": "Second Harvest",
+            "timeThere": "March 2021- May 2021"
+        },
+
+        {
+            "role": "Credit Card Fraud Internship",
+            "company": "East Stroudsburg University",
+            "timeThere": "May 2020 - August 2020"
+        }
+    ]
+
+}

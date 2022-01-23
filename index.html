@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Harris</title>
+        <meta http-equiv="expires" content="Fri , 21 Jan 2022 23:59:59 GMT"/>
+        <meta name="description" content="Arlyn professional website"/>
+        <meta http-equiv="author" content="Arlyn Harris"/>
+        <meta name="viewport" content="width=device-width"/>
+        
+    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Modak&family=Nanum+Pen+Script&family=Permanent+Marker&family=Rubik+Beastly&family=Sigmar+One&display=swap" rel="stylesheet"> 
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="arlynstyle.css" />
+    <body class="container-sm">
+
+        <!--Row-->
+        <div class="row">
+            <div id="resume" class="col-4 text-center" onClick="topButton('resume')">Resume</div>
+            <div id="project" class="col-4 text-center" onClick="topButton('project')">Projects</div>
+            <div id="interest" class="col-4 text-center" onClick="topButton('interest')">My Interets</div>
+        </div>
+
+        <!--Row-->
+        <div class="row text-center"><h1>Hey! I'm Rlynn</h1></div>
+
+        <!--Row-->
+        <div class="row text-center">
+            <div class="col-8 offset-2"><img src="arlyn.png" alt="Arlyn" height=250px width=220px onClick="doSomething()"/></div>
+        </div>
+
+         <!--Row-->
+        <div class="row">
+            <div class="col-12 text-center" id='quote'>"The most amazing thing about humans is our ability to change" - Jozette</div>
+        </div>
+
+        <!--Row-->
+        <div class="row col-10 offset-1" id="tidbit">I am a Front-End Developer in the process of becoming a Full-Stack Developer. Currently studying for the AWS Cloud Practioner exam.
+        <br/>
+        <br/>
+        </div>
+
+        <!--Mustache template goes in this DIV container-->
+        <div class="row top-buffer" id="info"></div>
+
+        <canvas id='my-canvas' class='confetti'></canvas>
+
+          <!--Row - Footer-->
+          <div class="row" id="footer">
+            <div class="col-3"></div>
+            <div class="col-6 text-center">
+                <a href="https://github.com/">
+                    <img src='githubicon.png' height=60 width=85/>
+                </a>
+            </div>
+            <div class="col-3"></div>
+        </div>
+
+        <!--Script Files-->
+        <script src="confetti-index.js"></script>
+        <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+        <script src="Bootstrap/js/bootstrap.bundle.js"></script>
+        <script type="text/javascript" src="arlynjs.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.min.js"></script>
+
+        <!--Mustache Template Below-->
+        <script id="template_must" type="text/template">
+            <div class="col-6">
+                <h2>Education</h2>
+                {{#educationList}}
+                    {{schoolName}}<br/>
+                    {{degree}}<br/> 
+                    {{time}}
+                {{/educationList}}
+                <br/><br/>
+
+                <h2>Award</h2>
+                {{#listAward}}
+                <ul>
+                    <li>{{awardName}}</li>
+                </ul>
+                {{/listAward}}
+            </div>
+
+
+            <div class="col-6">
+                <h2>Experience</h2>
+                {{#listOfExperience}}
+                <ul>
+                    <li>{{role}}<br/>
+                        {{company}}<br/>
+                        {{timeThere}}
+                    </li>
+                </ul>
+                {{/listOfExperience}}
+            </div>   
+        </script>
+    </body>
+</html>
