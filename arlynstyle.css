@@ -23,26 +23,10 @@ h2{
     padding:20px;
 }
 
-/*Made Elements*/
-#resume, #project, #interest{
+.markers{
     color:#EF798A;
-    font-size:xx-large;
+    font-size:x-large;
     font-family:'Modak';
-}
-
-#info{
-    outline: 7px solid;
-    outline-color:#613F75;
-    height: 500px;
-    border-radius:25px;
-    overflow:auto;
-    visibility: hidden;
-}
-
-#quote{
-    background-color: #613f75;
-    color:white;
-    border-radius:25px;
 }
 
 .confetti{
@@ -59,4 +43,24 @@ h2{
     margin-top:75px;
 }
 
+/*Made Elements*/
+#resume, #project, #interest{
+    color:#EF798A;
+    font-size:xx-large;
+    font-family:'Modak';
+}
 
+#info{
+    outline: 7px solid;
+    outline-color:#613F75;
+    /* height: 500px; */
+    border-radius:25px;
+    overflow:auto;
+    visibility: hidden;
+}
+
+#quote{
+    background-color: #613f75;
+    color:white;
+    border-radius:25px;
+}

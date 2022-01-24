@@ -9,7 +9,7 @@
         
     </head>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Modak&family=Nanum+Pen+Script&family=Permanent+Marker&family=Rubik+Beastly&family=Sigmar+One&display=swap" rel="stylesheet"> 
-    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="arlynstyle.css" />
     <body class="container-sm">
 
@@ -25,7 +25,7 @@
 
         <!--Row-->
         <div class="row text-center">
-            <div class="col-8 offset-2"><img src="arlyn.png" alt="Arlyn" height=250px width=220px onClick="doSomething()"/></div>
+            <div class="col-8 offset-2"><img src="arlyn.png" alt="Arlyn" height=250px width=220px onClick="hide()"/></div>
         </div>
 
          <!--Row-->
@@ -58,12 +58,12 @@
         <!--Script Files-->
         <script src="confetti-index.js"></script>
         <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-        <script src="Bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="Bootstrap/bootstrap.bundle.js"></script>
         <script type="text/javascript" src="arlynjs.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.min.js"></script>
 
         <!--Mustache Template Below-->
-        <script id="template_must" type="text/template">
+        <script id="template_resume" type="text/template">
             <div class="col-6">
                 <h2>Education</h2>
                 {{#educationList}}
@@ -93,6 +93,34 @@
                 </ul>
                 {{/listOfExperience}}
             </div>   
+        </script>
+
+        <script id="template_project" type="text/template">
+            <div class="col-12">
+                <h2>My Projects</h2>
+                {{#projectList}}
+                <ul>
+                    <li><em class="markers">Name:</em> {{projectName}}<br/>
+                        <em class="markers">Description:</em> {{description}}<br/>
+                        <em class="markers">Language:</em> {{language}}
+                    </li>
+                    <br/>
+                </ul>
+                {{/projectList}}
+            </div>
+        </script>
+
+        <script id="template_interest" type="text/template">
+            <div class="col-12">
+                <h2>My Interets </h2>
+                {{interestSummary}}
+                <br/>
+                {{#interestList}}
+                <ul>
+                    <li>{{.}}</li>
+                </ul>
+                {{/interestList}}
+            </div>
         </script>
     </body>
 </html>

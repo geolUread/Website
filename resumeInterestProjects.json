@@ -36,6 +36,36 @@
             "company": "East Stroudsburg University",
             "timeThere": "May 2020 - August 2020"
         }
-    ]
+    ], 
+
+    "projectList" :[
+        {
+            "projectName": "Arlyn Website",
+            "description": "A personalized website that details my progress in my career via jobs and projects undertaken as well as my personal interest.",
+            "language" : "HTML, CSS, JavaScript, JQuery, Mustache."
+        },
+
+        {
+            "projectName" : "AutoZoom",
+            "description" : "A windows desktop program that takes a user Zoom meeting and will automatically open the window at set time. Should be used for reoccuring meetings like online school courses. Created this to streamline opening Zoom for my courses, especially when the Zoom URL was emailed the first week of school only and we are 4 weeks in.",
+            "language" : "C#"
+        },
+
+        {
+            "projectName" : "Spide Solitare",
+            "description" : "A group project to recreate a Spider Soliatre in C++",
+            "language" : "C++"
+        },
+
+        {
+            "projectName" : "IARE Website",
+            "description" : "A e-commerce website on a product known as IARE. IARE is air taken from different areas around the world and shipped as a air-sealed jar to consumers.",
+            "language" : "HTML, CSS, JavaScript, JQuery"
+        }
+    ], 
+
+    "interestSummary" : "It is hard to write down all of my interests because, in this awesome world, there is an endless supply of them. Yet, I will attempt.",
+
+    "interestList" : ["Learning about Dinosaurs", "Visiting Museums", "Animal Documentaries, specifically animals ones. More specifically oceans ones", "Attempting to budget", "Movies - Sci-Fi and Fantasy", "Coding - UI/UX", "Knitting", "Embroidery", "Attempting to paint - Not going too well", "Reading - Non-series and non-fiction ones"]
 
 }
