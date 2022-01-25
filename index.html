@@ -15,13 +15,13 @@
 
         <!--Row-->
         <div class="row">
-            <div id="resume" class="col-4 text-center" onClick="topButton('resume')">Resume</div>
-            <div id="project" class="col-4 text-center" onClick="topButton('project')">Projects</div>
-            <div id="interest" class="col-4 text-center" onClick="topButton('interest')">My Interets</div>
+            <div id="resume" class="col-sm-4 text-center" onClick="topButton('resume')">Resume</div>
+            <div id="project" class="col-sm-4 text-center" onClick="topButton('project')">Projects</div>
+            <div id="interest" class="col-sm-4 text-center" onClick="topButton('interest')">My Interets</div>
         </div>
 
         <!--Row-->
-        <div class="row text-center"><h1>Hey! I'm Rlynn</h1></div>
+        <div class="row text-center"><h1>Hey! I'm Arlyn</h1></div>
 
         <!--Row-->
         <div class="row text-center">
@@ -40,7 +40,9 @@
         </div>
 
         <!--Mustache template goes in this DIV container-->
-        <div class="row top-buffer" id="info"></div>
+        <div class="row top-buffer">
+            <div class="col-sm-12" id="info"></div>
+        </div>
 
         <canvas id='my-canvas' class='confetti'></canvas>
 
@@ -64,7 +66,6 @@
 
         <!--Mustache Template Below-->
         <script id="template_resume" type="text/template">
-            <div class="col-6">
                 <h2>Education</h2>
                 {{#educationList}}
                     {{schoolName}}<br/>
@@ -79,10 +80,8 @@
                     <li>{{awardName}}</li>
                 </ul>
                 {{/listAward}}
-            </div>
 
-
-            <div class="col-6">
+                <br/>
                 <h2>Experience</h2>
                 {{#listOfExperience}}
                 <ul>
@@ -91,12 +90,11 @@
                         {{timeThere}}
                     </li>
                 </ul>
-                {{/listOfExperience}}
-            </div>   
+                {{/listOfExperience}} 
         </script>
 
         <script id="template_project" type="text/template">
-            <div class="col-12">
+            <div class="col-sm-12">
                 <h2>My Projects</h2>
                 {{#projectList}}
                 <ul>
@@ -111,7 +109,7 @@
         </script>
 
         <script id="template_interest" type="text/template">
-            <div class="col-12">
+            <div class="col-sm-12">
                 <h2>My Interets </h2>
                 {{interestSummary}}
                 <br/>
