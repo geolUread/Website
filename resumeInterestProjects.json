@@ -10,7 +10,7 @@
 
     "listAward": 
     [
-        { "awardName" :  "Clear Path Scholarship Recipient"},
+        { "awardName" : "Clear Path Scholarship Recipient"},
         { "awardName" : "Montefiore Scholarship Recipient"}, 
         { "awardName" : "AT&T Stem Scholarship Recipient"}, 
         { "awardName" : "East Stroudsburg Univeristy Computer Science Endowed Scholarship Recipient"}
@@ -43,12 +43,6 @@
             "projectName": "Arlyn Website",
             "description": "A personalized website that details my progress in my career via jobs and projects undertaken as well as my personal interest.",
             "language" : "HTML, CSS, JavaScript, JQuery, Mustache."
-        },
-
-        {
-            "projectName" : "AutoZoom",
-            "description" : "A windows desktop program that takes a user Zoom meeting and will automatically open the window at set time. Should be used for reoccuring meetings like online school courses. Created this to streamline opening Zoom for my courses, especially when the Zoom URL was emailed the first week of school only and we are 4 weeks in.",
-            "language" : "C#"
         },
 
         {
